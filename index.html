@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Reviews by Elle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .movie {
+            margin-bottom: 20px;
+        }
+        .movie img {
+            width: 100px;
+            height: 150px;
+            float: left;
+            margin-right: 20px;
+        }
+        .movie-details {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Movie Reviews by Elle</h1>
+    </header>
+    <main>
+        <!-- Midnight in Paris -->
+        <div class="movie">
+            <h2><a href="#!" onclick="toggleDetails('midnight-details')">Midnight in Paris</a></h2>
+            <img src=" https://m.media-amazon.com/images/I/71uQg6eU+QL._AC_SY679_.jpg" alt="Midnight in Paris Poster">
+            <div id="midnight-details" class="movie-details">
+                <p><strong>IMDb Rating:</strong> 7.7</p>
+                <p><strong>Genre:</strong> Comedy, Fantasy, Romance</p>
+                <p><strong>Director:</strong> Woody Allen</p>
+                <p><strong>Year:</strong> 2011</p>
+                <p><strong>Description:</strong> A screenwriter finds himself mysteriously going back to the 1920s every day at midnight.</p>
+                <p><strong>Spoiler Alert:</strong> He meets famous writers and artists from the past.</p>
+            </div>
+        </div>
+        <!-- The Wolf of Wall Street -->
+        <div class="movie">
+            <h2><a href="#!" onclick="toggleDetails('wolf-details')">The Wolf of Wall Street</a></h2>
+            <img src="https://m.media-amazon.com/images/I/81ZSC16UZ0L._AC_SY679_.jpg" alt="The Wolf of Wall Street Poster">
+            <div id="wolf-details" class="movie-details">
+                <p><strong>IMDb Rating:</strong> 8.2</p>
+                <p><strong>Genre:</strong> Biography, Crime, Drama</p>
+                <p><strong>Director:</strong> Martin Scorsese</p>
+                <p><strong>Year:</strong> 2013</p>
+                <p><strong>Description:</strong> Based on the true story of Jordan Belfort's rise and fall on Wall Street.</p>
+                <p><strong>Spoiler Alert:</strong> Belfort's excessive lifestyle leads to his downfall and arrest.</p>
+            </div>
+        </div>
+        <!-- A Clockwork Orange -->
+        <div class="movie">
+            <h2><a href="#!" onclick="toggleDetails('clockwork-details')">A Clockwork Orange</a></h2>
+            <img src="https://m.media-amazon.com/images/I/71xI9jnBdxL._AC_SY679_.jpg" alt="A Clockwork Orange Poster">
+            <div id="clockwork-details" class="movie-details">
+                <p><strong>IMDb Rating:</strong> 8.3</p>
+                <p><strong>Genre:</strong> Crime, Drama, Sci-Fi</p>
+                <p><strong>Director:</strong> Stanley Kubrick</p>
+                <p><strong>Year:</strong> 1971</p>
+                <p><strong>Description:</strong> In a dystopian future, a sadistic gang leader is imprisoned and volunteers for a conduct-aversion experiment, but it doesn't go as planned.</p>
+                <p><strong>Spoiler Alert:</strong> The experiment has devastating effects on him.</p>
+            </div>
+        </div>
+        <!-- The Pianist -->
+        <div class="movie">
+            <h2><a href="#!" onclick="toggleDetails('pianist-details')">The Pianist</a></h2>
+            <img src="https://m.media-amazon.com/images/I/81U7IPTfJCL._AC_SY679_.jpg" alt="The Pianist Poster">
+            <div id="pianist-details" class="movie-details">
+                <p><strong>IMDb Rating:</strong> 8.5</p>
+                <p><strong>Genre:</strong> Biography, Drama, Music</p>
+                <p><strong>Director:</strong> Roman Polanski</p>
+                <p><strong>Year:</strong> 2002</p>
+                <p><strong>Description:</strong> A Polish Jewish musician struggles to survive the destruction of the Warsaw ghetto during World War II.</p>
+                <p><strong>Spoiler Alert:</strong> He survives with the help of a sympathetic German officer.</p>
+            </div>
+        </div>
+        <!-- Life Is Beautiful -->
+        <div class="movie">
+            <h2><a href="#!" onclick="toggleDetails('life-details')">Life Is Beautiful</a></h2>
+            <img src="https://m.media-amazon.com/images/I/51dCIL+MquL._AC_.jpg" alt="Life Is Beautiful Poster">
+            <div id="life-details" class="movie-details">
+                <p><strong>IMDb Rating:</strong> 8.6</p>
+                <p><strong>Genre:</strong> Comedy, Drama, Romance</p>
+                <p><strong>Director:</strong> Roberto Benigni</p>
+                <p><strong>Year:</strong> 1997</p>
+                <p><strong>Description:</strong> When an open-minded Jewish librarian and his son become victims of the Holocaust, he uses a perfect mixture of will, humor, and imagination to protect his son from the dangers around their camp.</p>
+                <p><strong>Spoiler Alert:</strong> He keeps his son hidden and safe until the camp is liberated.</p>
+            </div>
+        </div>
+        <!-- Amadeus -->
+        <div class="movie">
+            <h2><a href="#!" onclick="toggleDetails('amadeus-details')">Amadeus</a></h2>
+            <img src="https://m.media-amazon.com/images/I/71Fnw6QzWLL._AC_SY679_.jpg" alt="Amadeus Poster">
+            <div id="amadeus-details" class="movie-details">
+                <p><strong>IMDb Rating:</strong> 8.4</p>
+                <p><strong>Genre:</strong> Biography, Drama, History</p>
+                <p><strong>Director:</strong> Milos Forman</p>
+                <p><strong>Year:</strong> 1984</p>
+                <p><strong>Description:</strong> The life, success, and troubles of Wolfgang Amadeus Mozart, as told by Antonio Salieri, the contemporaneous composer who was insanely jealous of Mozart's talent and claimed to have murdered him.</p>
+                <p><strong>Spoiler Alert:</strong> Salieri’s jealousy drives him to the brink of madness.</p>
+            </div>
+        </div>
+        <!-- Fantastic Mr. Fox -->
+        <div class="movie">
+            <h2><a href="#!" onclick="toggleDetails('fox-details')">Fantastic Mr. Fox</a></h2>
+            <img src="URL: https://m.media-amazon.com/images/I/91kFYg4fX3L._AC_SY679_.jpg" alt="Fantastic Mr. Fox Poster">
+            <div id="fox-details" class="movie-details">
+                <p><strong>IMDb Rating:</strong> 7.9</p>
+                <p><strong>Genre:</strong> Animation, Adventure, Comedy</p>
+                <p><strong>Director:</strong> Wes Anderson</p>
+                <p><strong>Year:</strong> 2009</p>
+                <p><strong>Description:</strong> An urbane fox cannot resist returning to his farm raiding ways and then must help his community survive the farmers' retaliation.</p>
+                <p><strong>Spoiler Alert:</strong> Mr. Fox outsmarts the farmers and saves his community.</p>
+            </div>
+        </div>
+        <!-- Requiem for a Dream -->
+        <div class="movie">
+            <h2><a href="#!" onclick="toggleDetails('requiem-details')">Requiem for a Dream</a></h2>
+            <img src=" https://m.media-amazon.com/images/I/71UedD74JxL._AC_SY679_.jpg" alt="Requiem for a Dream Poster">
+            <div id="requiem-details" class="movie-details">
+                <p><strong>IMDb Rating:</strong> 8.3</p>
+                <p><strong>Genre:</strong> Drama</p>
+                <p><strong>Director:</strong> Darren Aronofsky</p>
+                <p><strong>Year:</strong> 2000</p>
+                <p><strong>Description:</strong> The drug-induced utopias of four Coney Island people are shattered when their addictions run deep.</p>
+                <p><strong>Spoiler Alert:</strong>
+                                <p><strong>Spoiler Alert:</strong> Their lives spiral out of control in devastating ways.</p>
+            </div>
+        </div>
+        <!-- Eternal Sunshine of the Spotless Mind -->
+        <div class="movie">
+            <h2><a href="#!" onclick="toggleDetails('eternal-details')">Eternal Sunshine of the Spotless Mind</a></h2>
+            <img src="https://m.media-amazon.com/images/I/71NUs6ZjAHL._AC_SY679_.jpg" alt="Eternal Sunshine of the Spotless Mind Poster">
+            <div id="eternal-details" class="movie-details">
+                <p><strong>IMDb Rating:</strong> 8.3</p>
+                <p><strong>Genre:</strong> Drama, Romance, Sci-Fi</p>
+                <p><strong>Director:</strong> Michel Gondry</p>
+                <p><strong>Year:</strong> 2004</p>
+                <p><strong>Description:</strong> When their relationship turns sour, a couple undergoes a medical procedure to have each other erased from their memories.</p>
+                <p><strong>Spoiler Alert:</strong> They meet again and fall in love, despite their efforts to forget each other.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 ElleMira's Movie Reviews</p>
+    </footer>
+    <script>
+        function toggleDetails(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
